@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sara Beujekian's form</title>
+	<link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
@@ -13,16 +14,35 @@
 
   	<form id="survey-form">
 
-	  	<label>
+	  	<label for="name">Name: 
 	  		<input id="name" type="text" placeholder="First Last" required/>
 	  	</label>
-	  	<label>
+	  	<label for="email">Email: 
 	  		<input id="email" type="email" placeholder="Enter email" required/>
 	  	</label>
-	  	<label>
-	  		<input id="number" type="number" placeholder="Enter number" required/> /* add min max */
+	  	<label for="number">
+	  		<input id="number" type="number" placeholder="Enter number" required/>
 	  	</label>
-
+		<label for="dropdown">
+			<select id=""dropdown>
+				<option value=""></option>
+				<option value=""></option>
+				<option value=""></option>
+				<option value=""></option>
+			</select>
+		</label>
+		<label id="radio">
+			<input type="radio" name="radio"/>
+			<input type="radio" name="radio"/>
+		</label>
+		<label id="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</label>
+		<label class="comment-box">
+			<textarea></textarea>
+		</label>
 
   	</form>
 
