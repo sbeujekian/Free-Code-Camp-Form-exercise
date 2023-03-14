@@ -1,3 +1,53 @@
+h1,p {
+    text-align: center;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: rgb(122, 201, 240);
+}
+
+body:img{
+    width: 100vw;
+}
+
 label {
     display: block;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    display: block;
+}
+
+div {
+    background-color: rgba(255, 228, 196, 50%) ;
+    width: 70vw;
+    min-width: 300px;
+    padding: 25px;
+    margin: auto;
+}
+
+button {
+margin-left: ;
+margin-right: ;
+height: 2em;
+width: 25%;
+
+}
+
+#name, #email, #number {
+    width: 100%;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    height: 2em;
+    margin-top: 5px;
+}
+
+textarea {
+    width: 50vw;
+    height: 4em;
 }

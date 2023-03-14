@@ -9,31 +9,34 @@
   </head>
 
   <body>
-  	<h1>FREE CODE CAMP Form exercise</h1>
+	<img src="http://placekitten.com/1920/1080">
+  	<div>
+	<h1>FREE CODE CAMP Form exercise</h1>
   	<p id="description">This is a coding exercise for <a href="www.freecodecamp.com">Free Code Camp</a>'s Responsive web design certification.</p>
 
   	<form id="survey-form">
 
-	  	<label for="name">Name: 
+	  	<label for="name">Name<br/> 
 	  		<input id="name" type="text" placeholder="First Last" required/>
 	  	</label>
-	  	<label for="email">Email: 
+	  	<label for="email">Email<br/>
 	  		<input id="email" type="email" placeholder="Enter email" required/>
 	  	</label>
-	  	<label for="number">
-	  		<input id="number" type="number" placeholder="Enter number" required/>
+	  	<label for="number">Age
+	  		<input id="number" type="number" placeholder="Enter number" min="13" max="120" required/>
 	  	</label>
-		<label for="dropdown">
+		<label for="dropdown">How would you describe your diet
 			<select id=""dropdown>
-				<option value=""></option>
-				<option value=""></option>
-				<option value=""></option>
-				<option value=""></option>
+				<option value="">Omnivore</option>
+				<option value="">Vegetarian</option>
+				<option value="">Vegan</option>
+				<option value="">Pescitarian</option>
+				<option value="">Other</option>
 			</select>
 		</label>
-		<label id="radio">
-			<input type="radio" name="radio"/>
-			<input type="radio" name="radio"/>
+		<label id="radio"> Do you like food trucks?<br>
+			<input type="radio" name="radio"/></item> Yes<br>
+			<input type="radio" name="radio"/></item> No
 		</label>
 		<label id="checkbox">
 			<input type="checkbox">
@@ -43,7 +46,11 @@
 		<label class="comment-box">
 			<textarea></textarea>
 		</label>
+		<button id="submit">
+			Submit
+		</button>
 
   	</form>
+</div>
 
   </body>
