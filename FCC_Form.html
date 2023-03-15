@@ -6,47 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sara Beujekian's form</title>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
   </head>
 
   <body>
-	<img src="http://placekitten.com/1920/1080">
   	<div>
-	<h1>FREE CODE CAMP Form exercise</h1>
+	<h1 id="title">FREE CODE CAMP Form exercise</h1>
   	<p id="description">This is a coding exercise for <a href="www.freecodecamp.com">Free Code Camp</a>'s Responsive web design certification.</p>
 
   	<form id="survey-form">
 
-	  	<label for="name">Name<br/> 
+	  	<label for="name" id="name-label">Name<br/> 
 	  		<input id="name" type="text" placeholder="First Last" required/>
 	  	</label>
-	  	<label for="email">Email<br/>
+	  	<label for="email" id="email-label">Email<br/>
 	  		<input id="email" type="email" placeholder="Enter email" required/>
 	  	</label>
-	  	<label for="number">Age
+	  	<label for="number" id="number-label">Age
 	  		<input id="number" type="number" placeholder="Enter number" min="13" max="120" required/>
 	  	</label>
 		<label for="dropdown">How would you describe your diet
-			<select id=""dropdown>
-				<option value="">Omnivore</option>
-				<option value="">Vegetarian</option>
-				<option value="">Vegan</option>
-				<option value="">Pescitarian</option>
-				<option value="">Other</option>
+			<select id="dropdown">
+				<option value="Omnivore">Omnivore</option>
+				<option value="Vegetarian">Vegetarian</option>
+				<option value="Vegan">Vegan</option>
+				<option value="Pescitarian">Pescitarian</option>
+				<option value="Other">Other</option>
 			</select>
 		</label>
 		<label id="radio"> Do you like food trucks?<br>
-			<input type="radio" name="radio"/></item> Yes<br>
-			<input type="radio" name="radio"/></item> No
+			<input type="radio" name="radio" value="yes"/></item> Yes<br>
+			<input type="radio" name="radio" value="no"/></item> No
 		</label>
-		<label id="checkbox">
-			<input type="checkbox">
-			<input type="checkbox">
-			<input type="checkbox">
+		<label id="checkbox">What would encourage you to buy from food trucks:<br>
+			<input type="checkbox" value="lines"> Avoiding lines<br>
+			<input type="checkbox" value="menu"> Online menu<br>
+			<input type="checkbox" value="checkout"> Online checkout<br>
+			<input type="checkbox" value="none-above"> None of the above<br>
 		</label>
-		<label class="comment-box">
-			<textarea></textarea>
+		<label class="comment-box">Additional comments:
+			<textarea placeholder="Please type your comment here"></textarea>
 		</label>
-		<button id="submit">
+		<button id="submit" class="submit-button" type="submit">
 			Submit
 		</button>
 
